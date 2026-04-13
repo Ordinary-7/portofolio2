@@ -97,21 +97,24 @@ const PORTFOLIO = [
     title: "Analisis Pasar Keuangan",
     tag: "Finance · Personal Experience",
     desc: "Analisis laporan keuangan perusahaan, evaluasi risiko, dan riset pasar sebagai pertimbangan keputusan investasi.",
-    image: null,
-    year: "2024",
+    file: "/BEI JABBAR.pdf",
+    thumb: "Screenshot 2026-04-13 at 19.12.44.png",
+    year: "2024"
   },
   {
     title: "Penelitian Kecerdasan Emosional",
     tag: "Psikologi · Kuantitatif",
     desc: "Studi kuantitatif tentang pengaruh kecerdasan emosional terhadap kecemasan sosial pada kelompok dewasa awal.",
-    image: null,
+    file: null,
+    thumb: "EQ.png",
     year: "2024",
   },
   {
     title: "Studi Disonansi Kognitif",
     tag: "Psikologi · Kualitatif",
     desc: "Penelitian kualitatif tentang gambaran disonansi kognitif pada pemain judi online dewasa awal di Kota Makassar.",
-    image: null,
+    file: null,
+    thumb: "/DC.png",
     year: "2024",
   },
   // 🔧 Tambahkan proyek baru di bawah ini — salin format di atas
@@ -562,24 +565,27 @@ export default function Portfolio() {
               {PORTFOLIO.map((item, i) => (
                 <RevealItem key={i}>
                   <motion.div
-                    whileHover={{ y: -5, borderColor: "rgba(255,255,255,0.16)" }}
-                    transition={{ duration: 0.22 }}
-                    className="rounded-2xl border border-white/8 bg-white/[0.03] overflow-hidden h-full flex flex-col"
-                  >
-                    {/* Image area */}
-                    <div className="aspect-video bg-white/[0.022] border-b border-white/8 flex items-center justify-center overflow-hidden">
-                      {item.image
-                        ? <img src={item.image} alt={item.title} className="h-full w-full object-cover" />
-                        : <span className="ff-serif text-4xl italic text-white/8">{String(i + 1).padStart(2, "0")}</span>
-                      }
-                    </div>
-                    <div className="p-5 flex flex-col flex-1">
-                      <p className="text-[10px] uppercase tracking-[0.15em] text-white/28 mb-2">{item.tag}</p>
-                      <h3 className="font-semibold text-white/80 text-sm mb-2">{item.title}</h3>
-                      <p className="text-xs leading-6 text-white/45 flex-1">{item.desc}</p>
-                      <p className="mt-3 text-[10px] text-white/22">{item.year}</p>
-                    </div>
-                  </motion.div>
+  whileHover={{ y: -5, borderColor: "rgba(255,255,255,0.16)" }}
+  transition={{ duration: 0.22 }}
+  onClick={() => { if (item.file) window.open(item.file, "_blank"); }}
+  className={`rounded-2xl border border-white/8 bg-white/[0.03] overflow-hidden h-full flex flex-col ${item.file ? "cursor-pointer" : "cursor-default"}`}
+>
+  <div className="aspect-video bg-white/[0.022] border-b border-white/8 flex items-center justify-center overflow-hidden">
+  {item.thumb
+    ? <img src={item.thumb} alt={item.title} className="h-full w-full object-cover" />
+    : <span className="ff-serif text-4xl italic text-white/8">{String(i + 1).padStart(2, "0")}</span>
+  }
+</div>
+  <div className="p-5 flex flex-col flex-1">
+    <p className="text-[10px] uppercase tracking-[0.15em] text-white/28 mb-2">{item.tag}</p>
+    <h3 className="font-semibold text-white/80 text-sm mb-2">{item.title}</h3>
+    <p className="text-xs leading-6 text-white/45 flex-1">{item.desc}</p>
+    <div className="mt-3 flex items-center gap-1.5 text-xs text-white/30">
+      {item.file && <><IcExternal /> Lihat Dokumen</>}
+      <span className="ml-auto text-white/22">{item.year}</span>
+    </div>
+  </div>
+</motion.div>
                 </RevealItem>
               ))}
               {/* Slot tambah */}
