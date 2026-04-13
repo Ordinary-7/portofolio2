@@ -68,7 +68,7 @@ const CERTIFICATES: Cert[] = [
     issuer: "Google Cloud Skills Boost",
     year: "2024",
     desc: "Analisis data, BigQuery, Looker, dan storytelling insight bisnis berbasis data.",
-    file: "/sertifikat_course_905_5712638_080426202518.pdf,  // 🔧 contoh: "/sertif-google.pdf"
+    file: "/sertifikat_course_905_5712638_080426202518.pdf",  // 🔧 contoh: "/sertif-google.pdf"
   },
   {
     name: "Introduction to Data Analytics",
