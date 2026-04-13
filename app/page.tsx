@@ -53,11 +53,16 @@ const EDUCATION = [
   },
 ];
 
+// ── Tipe TypeScript (jangan diubah) ──
+type CertFilled = { empty?: false; name: string; issuer: string; year: string; desc: string; file: string | null };
+type CertEmpty  = { empty: true };
+type Cert = CertFilled | CertEmpty;
+
 // 🔧 SERTIFIKAT
 // - Untuk sertifikat yang ada: isi semua field
 // - Untuk "file": isi path seperti "/sertif-google.pdf" setelah taruh file di /public
 // - { empty: true } = slot kosong, akan muncul sebagai placeholder "+  Slot Kosong"
-const CERTIFICATES = [
+const CERTIFICATES: Cert[] = [
   {
     name: "Google Data Analytics",
     issuer: "Google Cloud Skills Boost",
@@ -506,41 +511,45 @@ export default function Portfolio() {
               </p>
             </Reveal>
             <RevealList className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {CERTIFICATES.map((cert, i) =>
-                cert.empty ? (
-                  <RevealItem key={i}>
-                    <div className="cert-slot group rounded-2xl border border-dashed border-white/10 p-6 flex flex-col items-center justify-center min-h-[178px] text-center hover:border-white/22 transition-colors duration-300">
-                      <div className="slot-plus mb-2 text-white/18 transition-colors duration-300"><IcPlus /></div>
-                      <p className="text-xs text-white/22">Slot Kosong</p>
-                      <p className="text-[10px] text-white/14 mt-1">Sertifikat baru akan hadir di sini</p>
-                    </div>
-                  </RevealItem>
-                ) : (
+              {CERTIFICATES.map((cert, i) => {
+                if (cert.empty) {
+                  return (
+                    <RevealItem key={i}>
+                      <div className="cert-slot group rounded-2xl border border-dashed border-white/10 p-6 flex flex-col items-center justify-center min-h-[178px] text-center hover:border-white/22 transition-colors duration-300">
+                        <div className="slot-plus mb-2 text-white/18 transition-colors duration-300"><IcPlus /></div>
+                        <p className="text-xs text-white/22">Slot Kosong</p>
+                        <p className="text-[10px] text-white/14 mt-1">Sertifikat baru akan hadir di sini</p>
+                      </div>
+                    </RevealItem>
+                  );
+                }
+                const c = cert as CertFilled;
+                return (
                   <RevealItem key={i}>
                     <motion.div
                       whileHover={{ y: -5, borderColor: "rgba(255,255,255,0.18)" }}
                       transition={{ duration: 0.22 }}
-                      onClick={() => cert.file && window.open(cert.file, "_blank")}
-                      className={`rounded-2xl border border-white/8 bg-white/[0.03] p-6 transition-colors duration-300 hover:bg-white/[0.055] h-full flex flex-col ${cert.file ? "cursor-pointer" : "cursor-default"}`}
+                      onClick={() => c.file && window.open(c.file, "_blank")}
+                      className={`rounded-2xl border border-white/8 bg-white/[0.03] p-6 transition-colors duration-300 hover:bg-white/[0.055] h-full flex flex-col ${c.file ? "cursor-pointer" : "cursor-default"}`}
                     >
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-white/40">
                           <IcAward />
                         </div>
-                        <span className="text-xs text-white/28">{cert.year}</span>
+                        <span className="text-xs text-white/28">{c.year}</span>
                       </div>
-                      <h3 className="font-semibold text-white/82 text-sm mb-1">{cert.name}</h3>
-                      <p className="text-xs text-white/35 mb-3">{cert.issuer}</p>
-                      <p className="text-xs leading-5 text-white/48 flex-1">{cert.desc}</p>
-                      {cert.file && (
+                      <h3 className="font-semibold text-white/82 text-sm mb-1">{c.name}</h3>
+                      <p className="text-xs text-white/35 mb-3">{c.issuer}</p>
+                      <p className="text-xs leading-5 text-white/48 flex-1">{c.desc}</p>
+                      {c.file && (
                         <div className="mt-3 flex items-center gap-1.5 text-xs text-white/30 hover:text-white/55 transition-colors">
                           <IcExternal /> Lihat Sertifikat
                         </div>
                       )}
                     </motion.div>
                   </RevealItem>
-                )
-              )}
+                );
+              })}
             </RevealList>
           </div>
         </section>
