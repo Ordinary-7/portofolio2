@@ -10,14 +10,14 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "Psychology · Data Analytics · Finance & HR",
-  bio: "Mahasiswa Psikologi Universitas Negeri Makassar dengan minat kuat pada persimpangan antara data, sumber daya manusia, dan keuangan. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang rapi.",
+  tagline: "ndustrial and Organizational Psychology · Finance & HR · Business & Data",
+  bio: "Mahasiswa Psikologi Universitas Negeri Makassar dengan minat kuat pada persimpangan antara data, sumber daya manusia, dan keuangan. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang baik.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
-  phone: "082191361889",
-  linkedin: "#",              // 🔧 Ganti dengan URL LinkedIn kamu
-  photo: null,                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
-  cv: "/cv.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
+  phone: "081393484073",
+  linkedin: "https://www.linkedin.com/in/muh-jabbar-muhaimin-70880a334?utm_source=share_via&utm_content=profile&utm_medium=member_android",              // 🔧 Ganti dengan URL LinkedIn kamu
+  photo: "/foto.jpg",                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
+  cv: "/CV_Muh. Jabbar Muhaimin Finance Staff",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
   status: "Open to Work",
 };
 
@@ -68,7 +68,7 @@ const CERTIFICATES: Cert[] = [
     issuer: "Google Cloud Skills Boost",
     year: "2024",
     desc: "Analisis data, BigQuery, Looker, dan storytelling insight bisnis berbasis data.",
-    file: null,  // 🔧 contoh: "/sertif-google.pdf"
+    file: "/sertifikat_course_905_5712638_080426202518.pdf,  // 🔧 contoh: "/sertif-google.pdf"
   },
   {
     name: "Introduction to Data Analytics",
