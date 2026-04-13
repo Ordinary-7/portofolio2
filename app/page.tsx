@@ -10,8 +10,8 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "ndustrial and Organizational Psychology · Finance & HR · Business & Data",
-  bio: "Mahasiswa Psikologi Universitas Negeri Makassar dengan minat kuat pada persimpangan antara data, sumber daya manusia, dan keuangan. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang baik.",
+  tagline: "Industrial and Organizational Psychology · Finance & HR · Business & Data",
+  bio: "Mahasiswa Psikologi dengan minat kuat pada data, sumber daya manusia, keuangan didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang baik.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
   phone: "081393484073",
@@ -64,10 +64,10 @@ type Cert = CertFilled | CertEmpty;
 // - { empty: true } = slot kosong, akan muncul sebagai placeholder "+  Slot Kosong"
 const CERTIFICATES: Cert[] = [
   {
-    name: "Google Data Analytics",
-    issuer: "Google Cloud Skills Boost",
-    year: "2024",
-    desc: "Analisis data, BigQuery, Looker, dan storytelling insight bisnis berbasis data.",
+    name: "Introduction to Financial literasy",
+    issuer: "Dicoding",
+    year: "2026",
+    desc: "Dasar pengelolaan keuangan sehari-hari, bagaimana merencanakan keuangan untuk masa depan dan konsep investasi sebagai salah satu cara menggapai kebebasan finansial.",
     file: "/sertifikat_course_905_5712638_080426202518.pdf",  // 🔧 contoh: "/sertif-google.pdf"
   },
   {
@@ -84,7 +84,12 @@ const CERTIFICATES: Cert[] = [
     desc: "Excel, SQL, Power BI untuk analisis data dan pengambilan keputusan bisnis.",
     file: null,
   },
-  { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
+  { name: "Introduction to Financial literasy",
+    issuer: "Dicoding",
+    year: "2026",
+    desc: "Dasar pengelolaan keuangan sehari-hari, bagaimana merencanakan keuangan untuk masa depan dan konsep investasi sebagai salah satu cara menggapai kebebasan finansial.",
+    file: "/sertifikat_course_905_5712638_080426202518.pdf", 
+  }, // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
 ];
@@ -107,6 +112,14 @@ const PORTFOLIO = [
     desc: "Studi kuantitatif tentang pengaruh kecerdasan emosional terhadap kecemasan sosial pada kelompok dewasa awal.",
     file: null,
     thumb: "EQ.png",
+    year: "2024",
+  },
+  {
+    title: "Studi Disonansi Kognitif",
+    tag: "Psikologi · Kualitatif",
+    desc: "Penelitian kualitatif tentang gambaran disonansi kognitif pada pemain judi online dewasa awal di Kota Makassar.",
+    file: null,
+    thumb: "/DC.png",
     year: "2024",
   },
   {
