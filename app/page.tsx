@@ -10,14 +10,14 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "Industrial and Organizational Psychology · Data Analytics · Business · Finance & HR",
+  tagline: "Psychology · Data Analytics · Finance & HR",
   bio: "Mahasiswa Psikologi Universitas Negeri Makassar dengan minat kuat pada persimpangan antara data, sumber daya manusia, dan keuangan. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang rapi.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
-  phone: "081393484073",
-  linkedin: "https://www.linkedin.com/in/muh-jabbar-muhaimin-70880a334?utm_source=share_via&utm_content=profile&utm_medium=member_android",              // 🔧 Ganti dengan URL LinkedIn kamu
-  photo: "/foto.jpg",                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
-  cv: "/CV_Muh. Jabbar Muhaimin Finance Staff.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
+  phone: "082191361889",
+  linkedin: "#",              // 🔧 Ganti dengan URL LinkedIn kamu
+  photo: null,                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
+  cv: "/cv.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
   status: "Open to Work",
 };
 
@@ -63,7 +63,7 @@ const CERTIFICATES = [
     issuer: "Google Cloud Skills Boost",
     year: "2024",
     desc: "Analisis data, BigQuery, Looker, dan storytelling insight bisnis berbasis data.",
-    file: "/sertifikat_course_905_5712638_080426202518.pdf",  // 🔧 contoh: "/sertif-google.pdf"
+    file: null,  // 🔧 contoh: "/sertif-google.pdf"
   },
   {
     name: "Introduction to Data Analytics",
@@ -177,7 +177,13 @@ const fadeUp = {
   show:   { opacity: 1, y: 0  },
 };
 
-function Reveal({ children, delay = 0, className = "" }) {
+import type { ReactNode } from "react";
+
+interface RevealProps  { children: ReactNode; delay?: number; className?: string; }
+interface ListProps    { children: ReactNode; className?: string; }
+interface HeaderProps  { label: string; title: string; }
+
+function Reveal({ children, delay = 0, className = "" }: RevealProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-70px" });
   return (
@@ -192,7 +198,7 @@ function Reveal({ children, delay = 0, className = "" }) {
   );
 }
 
-function RevealList({ children, className = "" }) {
+function RevealList({ children, className = "" }: ListProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   return (
@@ -205,13 +211,13 @@ function RevealList({ children, className = "" }) {
     </motion.div>
   );
 }
-const RevealItem = ({ children, className = "" }) => (
+const RevealItem = ({ children, className = "" }: ListProps) => (
   <motion.div variants={fadeUp} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className={className}>
     {children}
   </motion.div>
 );
 
-function SectionHeader({ label, title }) {
+function SectionHeader({ label, title }: HeaderProps) {
   return (
     <Reveal className="mb-10 text-center">
       <p className="text-[10px] tracking-[0.3em] uppercase text-white/25 mb-3">{label}</p>
@@ -639,7 +645,7 @@ export default function Portfolio() {
           <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/18">
             <span className="ff-serif text-xl italic">JM.</span>
             <span>© {new Date().getFullYear()} Muh. Jabbar Muhaimin · Makassar, Indonesia</span>
-            <span>Psychology × Business × Finance</span>
+            <span>Psychology × Data × Finance</span>
           </div>
         </footer>
 
