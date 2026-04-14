@@ -17,7 +17,7 @@ const PROFILE = {
   phone: "081393484073",
   linkedin: "https://www.linkedin.com/in/muh-jabbar-muhaimin-70880a334?utm_source=share_via&utm_content=profile&utm_medium=member_android",              // 🔧 Ganti dengan URL LinkedIn kamu
   photo: "/foto.jpg",                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
-  cv: "/CV_Muh. Jabbar Muhaimin Finance Staff",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
+  cv: "/CV_Muh. Jabbar Muhaimin Finance Staff.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
   status: "Open to Work",
 };
 
