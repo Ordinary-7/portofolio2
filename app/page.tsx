@@ -123,11 +123,11 @@ const PORTFOLIO = [
     year: "2024",
   },
   {
-    title: "Studi Disonansi Kognitif",
+    title: "Business Centre",
     tag: "Psikologi · Kualitatif",
     desc: "Penelitian kualitatif tentang gambaran disonansi kognitif pada pemain judi online dewasa awal di Kota Makassar.",
     file: null,
-    thumb: "/DC.png",
+    thumb: "/gemini.png",
     year: "2024",
   },
   // 🔧 Tambahkan proyek baru di bawah ini — salin format di atas
@@ -325,8 +325,8 @@ export default function Portfolio() {
               transition={{ duration: 0.85, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="ff-serif text-5xl sm:text-7xl lg:text-[88px] leading-[0.95] tracking-tight text-white mb-6"
             >
-              Muh. Jabbar<br />
-              <em className="text-white/35">Muhaimin.</em>
+              Muh Jabbar<br />
+              <em className="text-white/40">Muhaimin </em>
             </motion.h1>
 
             {/* Tag & lokasi */}
