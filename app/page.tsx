@@ -10,7 +10,7 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "Industrial and Organizational Psychology · Finance & HR · Business & Data",
+  tagline: "Industrial and Organizational Psychology · Human Resource · Business & Finance",
   bio: "Mahasiswa Psikologi dengan minat kuat pada data, sumber daya manusia, keuangan didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang baik.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
@@ -23,7 +23,7 @@ const PROFILE = {
 
 const HARD_SKILLS = [
   "Microsoft Excel", "Power BI", "Google Sheets", "SPSS",
-  "BigQuery", "Looker", "Data Analysis", "SQL",
+  "Artificial Intelligence", "Data Analysis", "SQL",
   "Microsoft Office", "Penyusunan Laporan", "Observasi", "Wawancara",
 ];
 
