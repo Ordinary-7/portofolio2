@@ -10,8 +10,8 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "Industrial and Organizational Psychology · Human Resource · Business & Finance",
-  bio: "Mahasiswa Psikologi dengan minat kuat pada data, sumber daya manusia, keuangan didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, didukung analisis data yang baik.",
+  tagline: "Industrial and Organizational Psychology · Human Resource, Business & Finance Integrated With AI · CEO JM Corporation",
+  bio: "Mahasiswa Psikologi dengan minat kuat pada sumber daya manusia, keuangan dan bisnis didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, analisis data yang baik dan integrasi teknologi untuk hasil maksimal.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
   phone: "081393484073",
@@ -23,7 +23,7 @@ const PROFILE = {
 
 const HARD_SKILLS = [
   "Microsoft Excel", "Power BI", "Google Sheets", "SPSS",
-  "Artificial Intelligence", "Data Analysis", "SQL",
+  "Artificial Intelligence", "Data Analysis",
   "Microsoft Office", "Penyusunan Laporan", "Observasi", "Wawancara",
 ];
 
@@ -436,7 +436,7 @@ export default function Portfolio() {
                     {[
                       ["Universitas", "Universitas Negeri Makassar"],
                       ["Program Studi", "S1 Psikologi"],
-                      ["Minat Utama", "Keuangan · Data · HR"],
+                      ["Minat Utama", "Business, Finance & HR Integrated With AI"],
                       ["Status", "Open to Work"],
                     ].map(([k, v]) => (
                       <div key={k} className="rounded-xl border border-white/[0.06] bg-white/[0.025] px-4 py-3">
