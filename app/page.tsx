@@ -10,7 +10,7 @@ import { motion, useInView } from "framer-motion";
 
 const PROFILE = {
   name: "Muh. Jabbar Muhaimin",
-  tagline: "Industrial and Organizational Psychology · Human Resource, Business & Finance Integrated With AI · CEO JM Corporation",
+  tagline: "Industrial and Organizational Psychology · Human Resource, Business & Finance Integrated With AI",
   bio: "Mahasiswa Psikologi dengan minat kuat pada sumber daya manusia, keuangan dan bisnis didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, analisis data yang baik dan integrasi teknologi untuk hasil maksimal.",
   location: "Makassar, Indonesia",
   email: "jabbarmuhaimin7@gmail.com",
@@ -71,11 +71,11 @@ const CERTIFICATES: Cert[] = [
     file: "/sertifikat_course_905_5712638_080426202518.pdf",  // 🔧 contoh: "/sertif-google.pdf"
   },
   {
-    name: "Introduction to Data Analytics",
-    issuer: "RevoU",
-    year: "2025",
-    desc: "Dasar-dasar data analytics dan simulasi pemecahan masalah bisnis nyata.",
-    file: null,
+    name: "Belajar Dasar AI",
+    issuer: "Dicoding",
+    year: "2026",
+    desc: "Mengidentifikasi konsep dasar tentang AI, Memaparkan konsep dasar tentang data serta pemanfaatannya dalam pengembangan AI, Menjelaskan konsep dasar Machine Learning sebagai bagian dari AI beserta contoh penerapannya, Mengidentifikasi konsep penting dalam Deep Learning beserta mengimplementasikan contoh penerapannya.",
+    file: "/sertifikat_course_653_5712638_200426151421.pdf",
   },
   {
     name: "Data Analyst Career Path",
