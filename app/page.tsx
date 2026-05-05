@@ -17,7 +17,7 @@ const PROFILE = {
   phone: "081393484073",
   linkedin: "https://www.linkedin.com/in/muh-jabbar-muhaimin-70880a334?utm_source=share_via&utm_content=profile&utm_medium=member_android",              // 🔧 Ganti dengan URL LinkedIn kamu
   photo: "/foto.jpg",                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
-  cv: "/CV_Muh. Jabbar Muhaimin Finance Staff.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
+  cv: "/CV_Muh. Jabbar Muhaimin.pdf",              // 🔧 Taruh file CV di /public dengan nama cv.pdf
   status: "Open to Work",
 };
 
@@ -29,7 +29,7 @@ const HARD_SKILLS = [
 
 const SOFT_SKILLS = [
   "Attention to Detail", "Critical Thinking", "Problem Solving",
-  "Adaptability", "Responsibility",
+  "Adaptability", "Responsibility", "Artificial Intelligence",
 ];
 
 const EDUCATION = [
@@ -42,6 +42,8 @@ const EDUCATION = [
       "Penelitian kuantitatif: Pengaruh Kecerdasan Emosional terhadap Kecemasan Sosial pada Dewasa Awal",
       "Penelitian kualitatif: Disonansi Kognitif pada Pemain Judi Online di Kota Makassar",
       "Simulasi wawancara kerja dengan teknik BEI metode STAR",
+      "Menyusun kamus kompetensi lengkap dengan indikator perilaku sebagai acuan penilaian dan pengembangan kinerja",
+      "Melaksanakan Assessment Center menggunakan simulasi LGD dan in-basket untuk menilai kompetensi dan menentukan kesesuaian kandidat secara objektif",
     ],
   },
   {
@@ -102,7 +104,7 @@ const PORTFOLIO = [
     title: "Analisis Pasar Keuangan",
     tag: "Finance · Personal Experience",
     desc: "Analisis laporan keuangan perusahaan, evaluasi risiko, dan riset pasar sebagai pertimbangan keputusan investasi.",
-    file: "/BEI JABBAR.pdf",
+    file: null,
     thumb: "Screenshot 2026-04-13 at 19.12.44.png",
     year: "2024"
   },
@@ -124,10 +126,26 @@ const PORTFOLIO = [
   },
   {
     title: "Business Centre",
-    tag: "Psikologi · Kualitatif",
-    desc: "Penelitian kualitatif tentang gambaran disonansi kognitif pada pemain judi online dewasa awal di Kota Makassar.",
+    tag: "Personal",
+    desc: "JM Corporation",
     file: null,
     thumb: "/gemini.png",
+    year: "2024",
+  },
+  {
+    title: "Menyusun Kamus Kompetensi",
+    tag: "Psikologi Industri dan Organisasi",
+    desc: "Menyusun kamus kompetensi jabatan Guru Bimbingan dan Konseling secara sistematis berbasis analisis jabatan, wawancara BEI, observasi, dan kuesioner, serta mengintegrasikan indikator perilaku pada setiap level kompetensi sebagai dasar penilaian kinerja dan pengembangan profesional.",
+    file: null,
+    thumb: null,
+    year: "2024",
+  },
+  {
+    title: "Melakukan dan Menyusun Laporan Assessment Center",
+    tag: "Psikologi Industri dan Organisasi",
+    desc: "Melaksanakan proses Assessment Center untuk seleksi jabatan Sekretaris dengan menggunakan metode simulasi LGD dan in-basket/intray guna menilai kompetensi kandidat secara objektif dan menghasilkan rekomendasi berbasis data terkait kesesuaian individu dengan tuntutan jabatan.",
+    file: null,
+    thumb: null,
     year: "2024",
   },
   // 🔧 Tambahkan proyek baru di bawah ini — salin format di atas
