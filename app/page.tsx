@@ -13,7 +13,7 @@ const PROFILE = {
   tagline: "Industrial and Organizational Psychology · Human Resource, Business & Finance Integrated With AI",
   bio: "Mahasiswa Psikologi dengan minat kuat pada sumber daya manusia, keuangan dan bisnis didukung dengan AI. Saya percaya keputusan terbaik lahir dari pemahaman manusia yang dalam, analisis data yang baik dan integrasi teknologi untuk hasil maksimal.",
   location: "Makassar, Indonesia",
-  email: "jabbarmuhaimin7@gmail.com",
+  email: "jabbarmuhaimin2@gmail.com",
   phone: "081393484073",
   linkedin: "https://www.linkedin.com/in/muh-jabbar-muhaimin-70880a334?utm_source=share_via&utm_content=profile&utm_medium=member_android",              // 🔧 Ganti dengan URL LinkedIn kamu
   photo: "/foto.jpg",                // 🔧 Ganti null dengan "/foto.jpg" lalu taruh foto di folder /public
