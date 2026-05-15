@@ -90,8 +90,20 @@ const CERTIFICATES: Cert[] = [
     issuer: "Hacktiv8",
     year: "2026",
     desc: "Dasar pengelolaan keuangan sehari-hari, bagaimana merencanakan keuangan untuk masa depan dan konsep investasi sebagai salah satu cara menggapai kebebasan finansial.",
-    file: "/sertifikat_course_905_5712638_080426202518.pdf", 
-  }, // 🔧 Ganti ini dengan sertifikat baru kamu
+    file: "/1778811683960-7ccf6f29-b189-4d8f-83b0-5899e5e03db1.pdf", 
+  },
+  { name: "AI Fluency: Framework & Foundation",
+    issuer: "Claude",
+    year: "2026",
+    desc: "Dasar pengelolaan keuangan sehari-hari, bagaimana merencanakan keuangan untuk masa depan dan konsep investasi sebagai salah satu cara menggapai kebebasan finansial.",
+    file: "/certificate-whbofe4gpnrr-1778287374.pdf",
+  },
+  { name: "Prompt Engineering untuk Software Developer",
+    issuer: "Dicoding",
+    year: "2026",
+    desc: "Mempelajari dasar-dasar prompt engineering, pola penyusunan prompt yang efektif, serta penerapannya dalam aktivitas software development. Materi juga mencakup praktik terbaik, optimalisasi penggunaan Generative AI, serta pemahaman mengenai keterbatasan dan etika penggunaannya dalam pengembangan perangkat lunak.",
+    file: "/sertifikat_course_753_5712638_070526120909.pdf",
+  },   // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
 ];
