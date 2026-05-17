@@ -103,6 +103,18 @@ const CERTIFICATES: Cert[] = [
     year: "2026",
     desc: "Mempelajari dasar-dasar prompt engineering, pola penyusunan prompt yang efektif, serta penerapannya dalam aktivitas software development. Materi juga mencakup praktik terbaik, optimalisasi penggunaan Generative AI, serta pemahaman mengenai keterbatasan dan etika penggunaannya dalam pengembangan perangkat lunak.",
     file: "/sertifikat_course_753_5712638_070526120909.pdf",
+  },
+  { name: "Recruiting, Hiring, and Onboarding Employees",
+    issuer: "University Of Minesota",
+    year: "2026",
+    desc: "Mempelajari dasar-dasar prompt engineering, pola penyusunan prompt yang efektif, serta penerapannya dalam aktivitas software development. Materi juga mencakup praktik terbaik, optimalisasi penggunaan Generative AI, serta pemahaman mengenai keterbatasan dan etika penggunaannya dalam pengembangan perangkat lunak.",
+    file: "/Coursera HLPS8MDAZWES.pdf",
+  },
+  { name: "AI Capabilities and Limitations",
+    issuer: "Antrophic",
+    year: "2026",
+    desc: "Mempelajari dasar-dasar prompt engineering, pola penyusunan prompt yang efektif, serta penerapannya dalam aktivitas software development. Materi juga mencakup praktik terbaik, optimalisasi penggunaan Generative AI, serta pemahaman mengenai keterbatasan dan etika penggunaannya dalam pengembangan perangkat lunak.",
+    file: "/certificate-s686dnad4ndk-1778471744.pdf",
   },   // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
   { empty: true }, // 🔧 Ganti ini dengan sertifikat baru kamu
